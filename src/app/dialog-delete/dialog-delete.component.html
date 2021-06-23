@@ -1,0 +1,12 @@
+<h1 mat-dialog-title class="red-color">Supprimer ce Result</h1>
+<div mat-dialog-content>
+  <span class="responsive-item">Voulez vous vraiment supprimer ce resultat ?</span>
+  <!--<mat-form-field>
+    <mat-label>Favorite Animal</mat-label>
+    <input matInput [(ngModel)]="data.animal">
+  </mat-form-field>-->
+</div>
+<div mat-dialog-actions fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="space-evenly none">
+  <button mat-button (click)="onNoClick()">Non Merci</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Supprimer</button>
+</div>

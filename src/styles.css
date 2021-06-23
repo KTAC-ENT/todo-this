@@ -1,0 +1,134 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+
+body {
+  margin: 0;
+  background-color: rgba(60, 60, 60, 0.8);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.responsive-item {
+  width: 100%;
+  height: auto;
+}
+.responsive-item-maw {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+
+.txt-wihte {
+  color: whitesmoke !important;
+}
+
+.mt-5 {
+  margin-top: 50px;
+}
+
+.container {
+  min-height: 100%;
+  width: 100%;
+  padding: 1px 10px;
+}
+.container-2 {
+  min-height: 100%;
+  width: 100%;
+  padding-top: 5px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid green;
+  height: 100%;
+}
+
+.add-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.delete-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+
+
+.close{
+  float:right;
+}
+.bold {
+  font-weight: bold;
+}
+
+button.close{
+  padding:0;
+  background-color:transparent;
+  border:0;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none
+}
+a.close.disabled{
+  pointer-events:none
+}
+
+.app-toolbar {
+  position: sticky;
+  position: -webkit-sticky; /* For macOS/iOS Safari */
+  top: 0; /* Sets the sticky toolbar to be on top */
+  z-index: 100000; /* Ensure that your app's content doesn't overlap the toolbar */
+}
+.app-task {
+  position: sticky;
+  position: -webkit-sticky; /* For macOS/iOS Safari */
+  top: 56px; /* Sets the sticky toolbar to be on top */
+  z-index: 10000; /* Ensure that your app's content doesn't overlap the toolbar */
+}
+
+.make-overflow-answer {
+  min-height: 80%;
+  max-height: 90%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-bottom: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f39301 !important;
+  border-radius: 1px;
+}
+
+.errorMessage {
+  color: #cb3429;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+.pr-5 {
+  padding-right: 5px;
+}
+
+.form-element {
+  width: 100%;
+}
+
+.button {
+  width: 100%;
+}
+
+.radio-btn {
+  padding: 0 5px 0 5px;
+}
+
