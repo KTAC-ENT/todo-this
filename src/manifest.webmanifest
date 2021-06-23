@@ -1,6 +1,6 @@
 {
-  "name": "poc-indexeddb",
-  "short_name": "poc-indexeddb",
+  "name": "my_todo",
+  "short_name": "my-todo",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
