@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "poc-indexeddb": {
+    "my-todo": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/poc-indexeddb",
+            "outputPath": "dist/my-todo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -21,8 +21,7 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/manifest.webmanifest"
+              "src/assets"
             ],
             "styles": [
               "src/styles.css"
@@ -56,28 +55,25 @@
                   "maximumWarning": "6kb",
                   "maximumError": "10kb"
                 }
-              ],
-              "serviceWorker": true,
-              "ngswConfigPath": "ngsw-config.json"
+              ]
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "poc-indexeddb:build",
-            "host": "0.0.0.0"
+            "browserTarget": "my-todo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "poc-indexeddb:build:production"
+              "browserTarget": "my-todo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "poc-indexeddb:build"
+            "browserTarget": "my-todo:build"
           }
         },
         "test": {
@@ -89,8 +85,7 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/manifest.webmanifest"
+              "src/assets"
             ],
             "styles": [
               "src/styles.css"
@@ -115,19 +110,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "poc-indexeddb:serve"
+            "devServerTarget": "my-todo:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "poc-indexeddb:serve:production"
+              "devServerTarget": "my-todo:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "poc-indexeddb",
+  "defaultProject": "my-todo",
   "cli": {
-    "analytics": "b17bacac-c71c-4799-a85b-d095a827a942"
+    "analytics": "616eba49-49cf-4167-80f6-4e2df1b16d13"
   }
 }

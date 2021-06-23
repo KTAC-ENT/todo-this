@@ -10,10 +10,10 @@ const express = require('express');
 const app = express();
 
 app.use(requireHTTPS);
-app.use(express.static('./dist/poc-indexeddb'));
+app.use(express.static('./dist/my-todo'));
 
 app.get('/*', (req, res) =>
-  res.sendFile('index.html', {root: 'dist/poc-indexeddb/'}),
+  res.sendFile('index.html', {root: 'dist/my-todo/'}),
 );
 
 app.listen(process.env.PORT || 8080);
